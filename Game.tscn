@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/tile_maps/Walls.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/tile_maps/Floors.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/images/bg_test.png" type="Texture" id=5]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -23,3 +24,12 @@ tile_data = PoolIntArray( -327674, 13, 0, -327673, 1, 0, -327672, 1, 0, -327671,
 [node name="Floors" parent="." instance=ExtResource( 4 )]
 position = Vector2( 0, 0.0583344 )
 tile_data = PoolIntArray( -262137, 10, 0, -262136, 12, 0, -262135, 12, 0, -262134, 11, 0, -196601, 12, 0, -196600, 12, 0, -196599, 12, 0, -196598, 12, 0, -131065, 12, 0, -131064, 12, 0, -131063, 12, 0, -131062, 12, 0, -4, 1, 0, -3, 1, 0, -2, 1, 0, -1, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65532, 1, 0, -65531, 1, 0, -65530, 1, 0, -65529, 12, 0, -65528, 12, 0, -65527, 12, 0, -65526, 12, 0, 65532, 1, 0, 65533, 1, 0, 65534, 1, 0, 65535, 1, 0, 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 12, 0, 8, 12, 0, 9, 12, 0, 10, 12, 0, 65543, 12, 0, 65544, 12, 0, 65545, 12, 0, 65546, 12, 0, 131079, 12, 0, 131080, 12, 0, 131081, 12, 0, 131082, 12, 0, 196615, 11, 0, 196616, 12, 0, 196617, 12, 0, 196618, 10, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="bg_test" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -220.661, -146.964 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
