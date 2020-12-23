@@ -10,7 +10,6 @@ collision/safe_margin = 1.0
 script = ExtResource( 3 )
 
 [node name="graphic" type="Sprite" parent="."]
-visible = false
 z_index = 1
 texture = ExtResource( 1 )
 
@@ -57,7 +56,7 @@ rotation = 3.14159
 
 [node name="door_airlock_left" parent="." instance=ExtResource( 4 )]
 position = Vector2( -55.0802, -159.097 )
-rotation = 6.28318
+rotation = -5.07036e-06
 
 [node name="door_engine_room" parent="." instance=ExtResource( 4 )]
 position = Vector2( 0.169876, -19.9416 )
