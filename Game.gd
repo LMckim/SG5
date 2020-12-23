@@ -20,10 +20,10 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_WHEEL_UP and current_zoom > zoom_in_limit:
-			$Player/Cam.zoom -= Vector2(zoom_speed, zoom_speed)
+			$ship/Player/Cam.zoom -= Vector2(zoom_speed, zoom_speed)
 			current_zoom -= 0.1
 		elif event.button_index == BUTTON_WHEEL_DOWN and current_zoom < zoom_out_limit:
-			$Player/Cam.zoom += Vector2(zoom_speed, zoom_speed)
+			$ship/Player/Cam.zoom += Vector2(zoom_speed, zoom_speed)
 			current_zoom += 0.1
 			
 		if current_zoom >= ship_view_limit:
@@ -33,6 +33,6 @@ func _input(event):
 			
 			
 func _process(delta):
-#	$ship.position.y -= 5 * delta
+	$ship.position.y -= 15 * delta
 	pass
 

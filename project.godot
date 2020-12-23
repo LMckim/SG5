@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="test"
+config/name="Space Game 5"
 run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
 
@@ -68,6 +68,34 @@ shift={
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777237,"unicode":0,"echo":false,"script":null)
  ]
 }
+interact_bind={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_rotate_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ui_rotate_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Crew"
+2d_physics/layer_3="Small Vehicles"
+2d_physics/layer_4="Large Vehicles"
+2d_physics/layer_5="Walls"
+2d_physics/layer_7="Interior Projectiles"
+2d_physics/layer_8="Exterior Projectiles"
+2d_physics/layer_10="Player Triggers"
+2d_physics/layer_11="Crew Triggers"
+2d_physics/layer_15="Parent Switches"
 
 [rendering]
 

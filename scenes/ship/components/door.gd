@@ -34,7 +34,6 @@ func _process(delta):
 			
 func _on_Sliding_Door_body_entered(body):
 	if body.name != "Player": return
-	print("Entered")
 	
 	occupied = true
 	if curr_state == state.CLOSED or curr_state == state.CLOSING:
@@ -42,7 +41,6 @@ func _on_Sliding_Door_body_entered(body):
 
 func _on_Sliding_Door_body_exited(body):
 	if body.name != "Player": return
-	print("Exited")
 	
 	occupied = false
 	if curr_state == state.OPEN or curr_state == state.CLOSED:

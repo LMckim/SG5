@@ -12,7 +12,7 @@ extents = Vector2( 3.875, 7.8125 )
 [node name="Sliding_Door" type="Area2D"]
 script = ExtResource( 1 )
 slide_speed = 75
-slide_max = 15
+slide_max = 16
 locked = true
 
 [node name="trigger" type="CollisionShape2D" parent="."]
