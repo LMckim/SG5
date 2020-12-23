@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/personnel_luke_sheet.png-b8e15553d7f1a9351bf84cbc3fba885e.stex"
+path="res://.import/ship_1_layout.png-b3a08a7e824256635eb8499aab6415f7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personnel_luke_sheet.png"
-dest_files=[ "res://.import/personnel_luke_sheet.png-b8e15553d7f1a9351bf84cbc3fba885e.stex" ]
+source_file="res://assets/ship/ship_1_layout.png"
+dest_files=[ "res://.import/ship_1_layout.png-b3a08a7e824256635eb8499aab6415f7.stex" ]
 
 [params]
 

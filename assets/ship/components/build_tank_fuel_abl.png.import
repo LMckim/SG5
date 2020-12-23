@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/personnel_luke_sheet.png-b8e15553d7f1a9351bf84cbc3fba885e.stex"
+path="res://.import/build_tank_fuel_abl.png-7434aa3eee824854da792c04e28a02be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/personnel_luke_sheet.png"
-dest_files=[ "res://.import/personnel_luke_sheet.png-b8e15553d7f1a9351bf84cbc3fba885e.stex" ]
+source_file="res://assets/ship/components/build_tank_fuel_abl.png"
+dest_files=[ "res://.import/build_tank_fuel_abl.png-7434aa3eee824854da792c04e28a02be.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

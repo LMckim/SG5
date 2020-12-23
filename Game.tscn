@@ -1,16 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Game.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/tile_maps/Walls.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/tile_maps/Floors.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/images/bg_test.png" type="Texture" id=5]
+[ext_resource path="res://scenes/ship/ship.tscn" type="PackedScene" id=6]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0.797424, -0.799805 )
+position = Vector2( -0.724213, -5.77648 )
 z_index = 1
 
 [node name="Cam" type="Camera2D" parent="Player"]
@@ -19,10 +20,11 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="Walls" parent="." instance=ExtResource( 3 )]
+position = Vector2( -582.175, -144.087 )
 tile_data = PoolIntArray( -327674, 13, 0, -327673, 1, 0, -327672, 1, 0, -327671, 1, 0, -327670, 1, 0, -327669, 14, 0, -262138, 0, 0, -262133, 0, 0, -196602, 0, 0, -196597, 0, 0, -65540, 1, 0, -65539, 1, 0, -65538, 1, 0, -65537, 1, 0, -131072, 1, 0, -131071, 1, 0, -131070, 1, 0, -131069, 1, 0, -131068, 1, 0, -131067, 1, 0, -131066, 15, 0, -131061, 0, 0, -65525, 0, 0, 11, 0, 0, 131068, 1, 0, 131069, 1, 0, 131070, 1, 0, 131071, 1, 0, 65536, 1, 0, 65537, 1, 0, 65538, 1, 0, 65539, 1, 0, 65540, 1, 0, 65541, 1, 0, 65542, 14, 0, 65547, 0, 0, 131078, 0, 0, 131083, 0, 0, 196614, 0, 0, 196619, 0, 0, 262150, 12, 0, 262151, 1, 0, 262152, 1, 0, 262153, 1, 0, 262154, 1, 0, 262155, 15, 0 )
 
 [node name="Floors" parent="." instance=ExtResource( 4 )]
-position = Vector2( 0, 0.0583344 )
+position = Vector2( -581.645, -143.499 )
 tile_data = PoolIntArray( -262137, 10, 0, -262136, 12, 0, -262135, 12, 0, -262134, 11, 0, -196601, 12, 0, -196600, 12, 0, -196599, 12, 0, -196598, 12, 0, -131065, 12, 0, -131064, 12, 0, -131063, 12, 0, -131062, 12, 0, -4, 1, 0, -3, 1, 0, -2, 1, 0, -1, 1, 0, -65536, 1, 0, -65535, 1, 0, -65534, 1, 0, -65533, 1, 0, -65532, 1, 0, -65531, 1, 0, -65530, 1, 0, -65529, 12, 0, -65528, 12, 0, -65527, 12, 0, -65526, 12, 0, 65532, 1, 0, 65533, 1, 0, 65534, 1, 0, 65535, 1, 0, 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0, 5, 1, 0, 6, 1, 0, 7, 12, 0, 8, 12, 0, 9, 12, 0, 10, 12, 0, 65543, 12, 0, 65544, 12, 0, 65545, 12, 0, 65546, 12, 0, 131079, 12, 0, 131080, 12, 0, 131081, 12, 0, 131082, 12, 0, 196615, 11, 0, 196616, 12, 0, 196617, 12, 0, 196618, 10, 0 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -30,6 +32,12 @@ tile_data = PoolIntArray( -262137, 10, 0, -262136, 12, 0, -262135, 12, 0, -26213
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 
 [node name="bg_test" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2( -220.661, -146.964 )
+position = Vector2( 0.33934, -0.879059 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ship" parent="." instance=ExtResource( 6 )]
+position = Vector2( -0.669907, 61.2881 )
